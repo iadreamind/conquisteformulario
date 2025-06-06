@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro de Aniversário e Follow-up</title>
+</head>
+<body>
+  <h2>Formulário de Aniversário e Follow-up</h2>
+
+  <form action="https://iadreamind.app.n8n.cloud/webhook/formulario-cliente" method="POST">
+
+    <label>Nome:</label><br>
+    <input type="text" name="nome" required><br><br>
+
+    <label>WhatsApp:</label><br>
+    <input type="text" name="whatsapp" required><br><br>
+
+    <label>Data de Criação (created_at):</label><br>
+    <input type="datetime-local" name="created_at" required><br><br>
+
+    <label>Data de Aniversário:</label><br>
+    <input type="date" name="data_aniversario" required><br><br>
+
+    <label>Mensagem de Aniversário:</label><br>
+    <textarea name="mensagem_aniversario" required></textarea><br><br>
+
+    <label>Data do Follow-up:</label><br>
+    <input type="date" name="data_followup" required><br><br>
+
+    <label>Mensagem do Follow-up:</label><br>
+    <textarea name="mensagem_followup" required></textarea><br><br>
+
+    <label>Aniversário já enviado?</label><br>
+    <select name="aniversario_enviado" required>
+      <option value="true">Sim</option>
+      <option value="false" selected>Não</option>
+    </select><br><br>
+
+    <label>Follow-up já enviado?</label><br>
+    <select name="followup_enviado" required>
+      <option value="true">Sim</option>
+      <option value="false" selected>Não</option>
+    </select><br><br>
+
+    <button type="submit">Salvar</button>
+
+  </form>
+</body>
+</html>
